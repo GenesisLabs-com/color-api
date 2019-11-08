@@ -1,10 +1,10 @@
-# Cosmos API
-Cosmos API is a library for interacting with applications built on the Cosmos SDK.
+# Color API
+Color API is a library for interacting with applications built on the Color SDK.
 
 ## Install
 
 ```
-yarn add @lunie/cosmos-js
+yarn add @rnssolution/color-api
 ```
 
 ## Use
@@ -12,15 +12,15 @@ yarn add @lunie/cosmos-js
 Simple example of how to send tokens.
 
 ```
-import Cosmos from "@lunie/cosmos-js"
+import Color from "@rnssolution/color-api"
 
-const STARGATE_URL = "https://stargate.cosmos.network"
-const ADDRESS = "cosmos1abcd1234"
-const cosmos = Cosmos(STARGATE_URL, ADDRESS)
+const STARGATE_URL = "https://proxy.testnet.color-platform.org:9061"
+const ADDRESS = "colors1abcd1234"
+const color = Color(STARGATE_URL, ADDRESS)
 
 // create the transaction object
-const msg = cosmos
-  .MsgSend({toAddress: 'cosmos1abcd09876', amounts: [{ denom: 'stake', amount: 10 }})
+const msg = color
+  .MsgSend({toAddress: 'colors1abcd09876', amounts: [{ denom: 'CLR', amount: 10 }})
 
 // estimate the needed gas amount
 const gasEstimate = await msg.simulate()
@@ -40,9 +40,9 @@ await included()
 If you want to query data only, you don't need to specify an address.
 
 ```
-import { API } from "@lunie/cosmos-js"
+import { API } from "@rnssolution/color-api"
 
-const STARGATE_URL = "https://stargate.cosmos.network"
+const STARGATE_URL = "https://proxy.testnet.color-platform.org:9061"
 
 const api = API(STARGATE_URL)
 
@@ -52,8 +52,8 @@ const validators = await api.validators()
 ### Create a sign message to sign with on a Ledger or with any other signer
 
 ```
-const { signWithPrivateKey } = require('@lunie/cosmos-keys');
-const { createSignMessage } = require('@lunie/cosmos-api');
+const { signWithPrivateKey } = require('@rnssolution/color-keys');
+const { createSignMessage } = require('@rnssolution/color-api');
 
 const stdTx = {
   msg: [
@@ -62,14 +62,14 @@ const stdTx = {
       value: {
         inputs: [
           {
-            address: `cosmos1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
-            coins: [{ denom: `STAKE`, amount: `1` }]
+            address: `colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
+            coins: [{ denom: `CLR`, amount: `1` }]
           }
         ],
         outputs: [
           {
-            address: `cosmos1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
-            coins: [{ denom: `STAKE`, amount: `1` }]
+            address: `colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
+            coins: [{ denom: `CLR`, amount: `1` }]
           }
         ]
       }
@@ -87,22 +87,22 @@ const signature = signWithPrivateKey(signMessage, Buffer.from(wallet.privateKey,
 ### Create and sign a transaction from a message which then is ready to be broadcast
 
 ```
-const { signWithPrivateKey } = require('@lunie/cosmos-keys');
-const { createSignedTransaction } = require('@lunie/cosmos-api');
+const { signWithPrivateKey } = require('@rnssolution/color-keys');
+const { createSignedTransaction } = require('@rnssolution/color-api');
 
 const sendMsg = {
   type: `cosmos-sdk/Send`,
   value: {
     inputs: [
       {
-        address: `cosmos1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
-        coins: [{ denom: `STAKE`, amount: `1` }]
+        address: `colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
+        coins: [{ denom: `CLR`, amount: `1` }]
       }
     ],
     outputs: [
       {
-        address: `cosmos1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
-        coins: [{ denom: `STAKE`, amount: `1` }]
+        address: `colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
+        coins: [{ denom: `CLR`, amount: `1` }]
       }
     ]
   }
@@ -110,5 +110,5 @@ const sendMsg = {
 
 const signer = signMessage = > signWithPrivateKey(signMessage, Buffer.from(wallet.privateKey, 'hex'))
 
-const signMessage = createSignedTransaction({ gas: 1000, gasPrices = [{ amount: "10", denom: "uatom" }], memo = `Hi from Lunie` }, [sendMsg], signer, chainId: "test-chain", accountNumber: 0, sequence: 12);
+const signMessage = createSignedTransaction({ gas: 1000, gasPrices = [{ amount: "10", denom: "uatom" }], memo = `Hi from Color Platform` }, [sendMsg], signer, chainId: "test-chain", accountNumber: 0, sequence: 12);
 ```

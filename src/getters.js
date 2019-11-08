@@ -87,7 +87,7 @@ export default function Getters (cosmosRESTURL) {
     },
     tx: hash => get(`/txs/${hash}`),
 
-    /* ============ STAKE ============ */
+    /* ============ CLR ============ */
     stakingTxs: async function (address, valAddress) {
       return Promise.all([
         get(

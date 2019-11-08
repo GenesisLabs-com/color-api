@@ -85,9 +85,9 @@ jobs:
       - checkout
       - run: |
           yarn add simsala
-          git config user.email "bot@lunie.io"
-          git config user.name "Lunie Bot"
-          node node_modules/simsala/src/cli.js release-candidate --semver prerelease --owner luniehq --repository cosmos-js --token $GIT_BOT_TOKEN
+          git config user.email "hello@color-platform.org"
+          git config user.name "Color Platform"
+          node node_modules/simsala/src/cli.js release-candidate --semver prerelease --owner color --repository color-js --token $GIT_BOT_TOKEN
 
   # Push merges to master immediatly back to develop to stay in sync
   mergeBack:

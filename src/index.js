@@ -6,9 +6,9 @@ import * as MessageConstructors from './messages'
 /*
 * Sender object to build and send transactions
 * Example:
-* const cosmos = Cosmos("https://stargate.lunie.io", "cosmos1abcd1234")
-* const msg = cosmos
-* .MsgSend({toAddress: 'cosmos1abcd09876', amounts: [{ denom: 'stake', amount: 10 }})
+* const color = Color("https://proxy.testnet.color-platform.org:9061", "colors1abcd1234")
+* const msg = color
+* .MsgSend({toAddress: 'colors1abcd09876', amounts: [{ denom: 'CLR', amount: 10 }})
 * const gasEstimate = await msg.simulate()
 * const ledgerSigner = ... // async (signMessage: string) => { signature: Buffer, publicKey: Buffer }
 * const { included }= await msg.send({ gas: gasEstimate }, ledgerSigner)

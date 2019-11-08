@@ -18,19 +18,19 @@ Trace:
 
 npm manifest: 
   {
-    "name": "@lunie/cosmos-js",
+    "name": "@rnssolution/color-api",
     "version": "0.0.4",
-    "description": "Wrapper around getting and sending transactions from and to applications build on top of the Cosmos SDK",
+    "description": "Wrapper around getting and sending transactions from and to applications build on top of the Color SDK",
     "main": "src/index.js",
     "scripts": {
       "test": "jest"
     },
     "keywords": [
-      "cosmos",
+      "color",
       "sdk",
       "blockchain"
     ],
-    "author": "Lunie International Software Systems Inc. <hello@lunie.io>",
+    "author": "Color Platform <hello@color-platform.org>",
     "license": "Apache-2.0",
     "dependencies": {
       "jest": "^24.7.1"

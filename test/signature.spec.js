@@ -12,14 +12,14 @@ describe(`Signing`, () => {
         value: {
           inputs: [
             {
-              address: `cosmos1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
-              coins: [{ denom: `STAKE`, amount: `1` }]
+              address: `colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
+              coins: [{ denom: `CLR`, amount: `1` }]
             }
           ],
           outputs: [
             {
-              address: `cosmos1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
-              coins: [{ denom: `STAKE`, amount: `1` }]
+              address: `colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
+              coins: [{ denom: `CLR`, amount: `1` }]
             }
           ]
         }
@@ -36,15 +36,15 @@ describe(`Signing`, () => {
         value: {
           inputs: [
             {
-              address: `cosmos1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
-              coins: [{ denom: `STAKE`, amount: `1` }]
+              address: `colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66`,
+              coins: [{ denom: `CLR`, amount: `1` }]
             }
           ],
           outputs: [
             {
               x: undefined,
-              address: `cosmos1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
-              coins: [{ denom: `STAKE`, amount: `1` }]
+              address: `colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt`,
+              coins: [{ denom: `CLR`, amount: `1` }]
             }
           ]
         }
@@ -93,14 +93,14 @@ describe(`Signing`, () => {
         sequence: `0`,
         accountNumber: `1`,
         chainId: `tendermint_test`,
-        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"cosmos-sdk/Send","value":{"inputs":[{"address":"cosmos1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"STAKE"}]}],"outputs":[{"address":"cosmos1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"STAKE"}]}]}}],"sequence":"0"}`
+        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"cosmos-sdk/Send","value":{"inputs":[{"address":"colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"CLR"}]}],"outputs":[{"address":"colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"CLR"}]}]}}],"sequence":"0"}`
       },
       {
         tx: txWithNulls,
         sequence: `0`,
         accountNumber: `1`,
         chainId: `tendermint_test`,
-        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"cosmos-sdk/Send","value":{"inputs":[{"address":"cosmos1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"STAKE"}]}],"outputs":[{"address":"cosmos1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"STAKE"}]}]}}],"sequence":"0"}`
+        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"cosmos-sdk/Send","value":{"inputs":[{"address":"colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"CLR"}]}],"outputs":[{"address":"colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"CLR"}]}]}}],"sequence":"0"}`
       }
     ]
 

@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Renamed module to cosmos-api @faboweb
+- Renamed module to color-api @faboweb
 
 ### Fixed
 

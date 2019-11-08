@@ -1,7 +1,7 @@
 {
-  "name": "@lunie/cosmos-api",
-  "version": "0.1.1",
-  "description": "Wrapper around getting and sending transactions from and to applications build on top of the Cosmos SDK",
+  "name": "@rnssolution/color-api",
+  "version": "1.0.0",
+  "description": "Wrapper around getting and sending transactions from and to applications build on top of the Color SDK",
   "main": "lib/cosmos.js",
   "scripts": {
     "test": "jest",
@@ -12,11 +12,11 @@
     "release": "git checkout develop & git pull & git push origin develop:release"
   },
   "keywords": [
-    "cosmos",
+    "color",
     "sdk",
     "blockchain"
   ],
-  "author": "Lunie International Software Systems Inc. <hello@lunie.io>",
+  "author": "Color Platform <hello@color-platform.org>",
   "licenses": [
     {
       "license": "Apache-2.0"
