@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1576562690144" clover="3.2.0">
+  <project timestamp="1576562690144" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4" elements="26" coveredelements="25" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
+    <file name="signature.js" path="/home/usman/go/src/github.com/RNSSolution/color-api/src/signature.js">
+      <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="41" count="2" type="stmt"/>
+      <line num="53" count="64" type="cond" truecount="2" falsecount="0"/>
+      <line num="54" count="12" type="stmt"/>
+      <line num="58" count="52" type="cond" truecount="2" falsecount="0"/>
+      <line num="59" count="31" type="stmt"/>
+      <line num="62" count="21" type="stmt"/>
+      <line num="63" count="21" type="stmt"/>
+      <line num="66" count="52" type="cond" truecount="4" falsecount="0"/>
+      <line num="68" count="49" type="stmt"/>
+      <line num="70" count="21" type="stmt"/>
+    </file>
+  </project>
+</coverage>

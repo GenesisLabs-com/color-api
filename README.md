@@ -58,7 +58,7 @@ const { createSignMessage } = require('@rnssolution/color-api');
 const stdTx = {
   msg: [
     {
-      type: `cosmos-sdk/Send`,
+      type: `color/Send`,
       value: {
         inputs: [
           {
@@ -91,7 +91,7 @@ const { signWithPrivateKey } = require('@rnssolution/color-keys');
 const { createSignedTransaction } = require('@rnssolution/color-api');
 
 const sendMsg = {
-  type: `cosmos-sdk/Send`,
+  type: `color/Send`,
   value: {
     inputs: [
       {

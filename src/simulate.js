@@ -13,14 +13,14 @@ export default async function simulate (
 ) {
   const type = msg.type
   const path = {
-    'cosmos-sdk/MsgSend': () => `/bank/accounts/${senderAddress}/transfers`,
-    'cosmos-sdk/MsgDelegate': () => `/staking/delegators/${senderAddress}/delegations`,
-    'cosmos-sdk/MsgUndelegate': () => `/staking/delegators/${senderAddress}/unbonding_delegations`,
-    'cosmos-sdk/MsgBeginRedelegate': () => `/staking/delegators/${senderAddress}/redelegations`,
-    'cosmos-sdk/MsgSubmitProposal': () => `/gov/proposals`,
-    'cosmos-sdk/MsgVote': () => `/gov/proposals/${msg.value.proposal_id}/votes`,
-    'cosmos-sdk/MsgDeposit': () => `/gov/proposals/${msg.value.proposal_id}/deposits`,
-    'cosmos-sdk/MsgWithdrawDelegationReward': () => `/distribution/delegators/${senderAddress}/rewards`
+    'color/MsgSend': () => `/bank/accounts/${senderAddress}/transfers`,
+    'color/MsgDelegate': () => `/staking/delegators/${senderAddress}/delegations`,
+    'color/MsgUndelegate': () => `/staking/delegators/${senderAddress}/unbonding_delegations`,
+    'color/MsgBeginRedelegate': () => `/staking/delegators/${senderAddress}/redelegations`,
+    'color/MsgSubmitProposal': () => `/gov/proposals`,
+    'color/MsgVote': () => `/gov/proposals/${msg.value.proposal_id}/votes`,
+    'color/MsgDeposit': () => `/gov/proposals/${msg.value.proposal_id}/deposits`,
+    'color/MsgWithdrawDelegationReward': () => `/distribution/delegators/${senderAddress}/rewards`
   }[type]()
   const url = `${cosmosRESTURL}${path}`
 

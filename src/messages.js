@@ -7,7 +7,7 @@ export function MsgSend (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgSend`,
+    type: `color/MsgSend`,
     value: {
       from_address: senderAddress,
       to_address: toAddress,
@@ -26,7 +26,7 @@ export function MsgDelegate (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgDelegate`,
+    type: `color/MsgDelegate`,
     value: {
       delegator_address: senderAddress,
       validator_address: validatorAddress,
@@ -44,7 +44,7 @@ export function MsgUndelegate (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgUndelegate`,
+    type: `color/MsgUndelegate`,
     value: {
       validator_address: validatorAddress,
       delegator_address: senderAddress,
@@ -63,7 +63,7 @@ export function MsgRedelegate (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgBeginRedelegate`,
+    type: `color/MsgBeginRedelegate`,
     value: {
       delegator_address: senderAddress,
       validator_src_address: validatorSourceAddress,
@@ -87,7 +87,7 @@ export function MsgSubmitProposal (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgSubmitProposal`,
+    type: `color/MsgSubmitProposal`,
     value: {
       proposer: senderAddress,
       proposal_type: proposalType,
@@ -108,7 +108,7 @@ export function MsgVote (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgVote`,
+    type: `color/MsgVote`,
     value: {
       voter: senderAddress,
       proposal_id: proposalId,
@@ -125,7 +125,7 @@ export function MsgDeposit (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgDeposit`,
+    type: `color/MsgDeposit`,
     value: {
       depositor: senderAddress,
       proposal_id: proposalId,
@@ -141,7 +141,7 @@ export function MsgWithdrawDelegationReward (
   }
 ) {
   return {
-    type: `cosmos-sdk/MsgWithdrawDelegationReward`,
+    type: `color/MsgWithdrawDelegationReward`,
     value: {
       delegator_address: senderAddress,
       validator_address: validatorAddress

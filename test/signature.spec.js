@@ -8,7 +8,7 @@ describe(`Signing`, () => {
   const tx = {
     msg: [
       {
-        type: `cosmos-sdk/Send`,
+        type: `color/Send`,
         value: {
           inputs: [
             {
@@ -32,7 +32,7 @@ describe(`Signing`, () => {
   const txWithNulls = {
     msg: [
       {
-        type: `cosmos-sdk/Send`,
+        type: `color/Send`,
         value: {
           inputs: [
             {
@@ -93,14 +93,14 @@ describe(`Signing`, () => {
         sequence: `0`,
         accountNumber: `1`,
         chainId: `tendermint_test`,
-        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"cosmos-sdk/Send","value":{"inputs":[{"address":"colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"CLR"}]}],"outputs":[{"address":"colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"CLR"}]}]}}],"sequence":"0"}`
+        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"color/Send","value":{"inputs":[{"address":"colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"CLR"}]}],"outputs":[{"address":"colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"CLR"}]}]}}],"sequence":"0"}`
       },
       {
         tx: txWithNulls,
         sequence: `0`,
         accountNumber: `1`,
         chainId: `tendermint_test`,
-        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"cosmos-sdk/Send","value":{"inputs":[{"address":"colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"CLR"}]}],"outputs":[{"address":"colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"CLR"}]}]}}],"sequence":"0"}`
+        signMessage: `{"account_number":"1","chain_id":"tendermint_test","fee":{"amount":[{"amount":"0","denom":""}],"gas":"21906"},"memo":"","msgs":[{"type":"color/Send","value":{"inputs":[{"address":"colors1qperwt9wrnkg5k9e5gzfgjppzpqhyav5j24d66","coins":[{"amount":"1","denom":"CLR"}]}],"outputs":[{"address":"colors1yeckxz7tapz34kjwnjxvmxzurerquhtrmxmuxt","coins":[{"amount":"1","denom":"CLR"}]}]}}],"sequence":"0"}`
       }
     ]
 
