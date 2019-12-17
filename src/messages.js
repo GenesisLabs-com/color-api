@@ -16,6 +16,22 @@ export function MsgSend (
   }
 }
 
+// SignVerify
+export function MsgSignMessage (
+  senderAddress,
+  {
+    Message
+  }
+) {
+  return {
+    type: `color/MsgSignMessage`,
+    value: {
+      signerAddress: senderAddress,
+      message: Message
+    }
+  }
+}
+
 // Staking
 export function MsgDelegate (
   senderAddress,

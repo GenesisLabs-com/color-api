@@ -1,6 +1,6 @@
 {
   "name": "@rnssolution/color-api",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Wrapper around getting and sending transactions from and to applications build on top of the Color SDK",
   "main": "lib/cosmos.js",
   "scripts": {
