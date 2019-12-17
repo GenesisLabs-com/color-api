@@ -1,6 +1,6 @@
 {
   "name": "@rnssolution/color-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Wrapper around getting and sending transactions from and to applications build on top of the Color SDK",
   "main": "lib/cosmos.js",
   "scripts": {
@@ -52,5 +52,18 @@
       "node_modules"
     ],
     "collectCoverage": true
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RNSSolution/color-api.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RNSSolution/color-api/issues"
+  },
+  "homepage": "https://github.com/RNSSolution/color-api#readme"
 }
