@@ -4,7 +4,7 @@ Color API is a library for interacting with applications built on the Color SDK.
 ## Install
 
 ```
-yarn add @rnssolution/color-api
+yarn add @colorplatform/color-api
 ```
 
 ## Use
@@ -12,7 +12,7 @@ yarn add @rnssolution/color-api
 Simple example of how to send tokens.
 
 ```
-import Color from "@rnssolution/color-api"
+import Color from "@colorplatform/color-api"
 
 const STARGATE_URL = "https://proxy.testnet.color-platform.org:9061"
 const ADDRESS = "colors1abcd1234"
@@ -40,7 +40,7 @@ await included()
 If you want to query data only, you don't need to specify an address.
 
 ```
-import { API } from "@rnssolution/color-api"
+import { API } from "@colorplatform/color-api"
 
 const STARGATE_URL = "https://proxy.testnet.color-platform.org:9061"
 
@@ -52,8 +52,8 @@ const validators = await api.validators()
 ### Create a sign message to sign with on a Ledger or with any other signer
 
 ```
-const { signWithPrivateKey } = require('@rnssolution/color-keys');
-const { createSignMessage } = require('@rnssolution/color-api');
+const { signWithPrivateKey } = require('@colorplatform/color-keys');
+const { createSignMessage } = require('@colorplatform/color-api');
 
 const stdTx = {
   msg: [
@@ -87,8 +87,8 @@ const signature = signWithPrivateKey(signMessage, Buffer.from(wallet.privateKey,
 ### Create and sign a transaction from a message which then is ready to be broadcast
 
 ```
-const { signWithPrivateKey } = require('@rnssolution/color-keys');
-const { createSignedTransaction } = require('@rnssolution/color-api');
+const { signWithPrivateKey } = require('@colorplatform/color-keys');
+const { createSignedTransaction } = require('@colorplatform/color-api');
 
 const sendMsg = {
   type: `color/Send`,

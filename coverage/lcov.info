@@ -1,5 +1,5 @@
 TN:
-SF:/home/usman/go/src/github.com/RNSSolution/color-api/src/signature.js
+SF:/home/usman/go/src/github.com/color/color-api/src/signature.js
 FN:13,createSignMessage
 FN:35,createSignature
 FN:52,removeEmptyProperties
